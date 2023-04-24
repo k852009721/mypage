@@ -1,0 +1,15 @@
+{
+	"editor.formatOnSave": false,
+	"prettier.enable": false,
+	"editor.tabSize": 2,
+	"volar.autoCompleteRefs": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": false,
+		"source.fixAll.eslint": true
+	},
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"prettier.printWidth": 120
+}
