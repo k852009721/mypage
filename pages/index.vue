@@ -18,7 +18,7 @@ function activeTabClass(index) {
 <template>
   <div class="font-sans bg-base color-base">
     <OverlayButton />
-    <div class="fixed right-10 top-50%">
+    <div class="fixed right-10 top-50% z-1">
       <div
         v-for="(item, index) in sections" :key="index"
         class="display-none h-14 items-center justify-center transition-all duration-150 ease-linear md:flex"
@@ -32,13 +32,16 @@ function activeTabClass(index) {
       ref="section1"
       class="full-page"
     >
-      <SectionHome />
+      <SectionHome z-1 />
+      <IconCode class="absolute w-250 rotate-180 opacity-70 filter-blur-6 -bottom-450px -left-550px" />
     </section>
     <section
       ref="section2"
       class="full-page"
     >
-      <SectionAbout />
+      <SectionAbout z-1 />
+      <IconCode class="absolute z-0 w-250 rotate-180 opacity-70 filter-blur-6 -left-550px -top-450px" />
+      <IconCode class="absolute z-0 w-250 opacity-70 filter-blur-6 -bottom-450px -right-550px" />
     </section>
     <section
       ref="section3"

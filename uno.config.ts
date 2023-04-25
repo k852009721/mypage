@@ -8,7 +8,7 @@ export default defineConfig({
     { 'border-base': 'border-gray-200 dark:border-dark-200' },
     { 'color-base': 'text-gray-900 dark:text-gray-300' },
     { 'color-fade': 'text-gray-900:50 dark:text-gray-300:50' },
-    { 'full-page': 'h-screen text-3xl flex justify-center min-w-xs' },
+    { 'full-page': 'h-screen text-3xl flex justify-center min-w-xs relative overflow-hidden' },
     [/^full-page-(.*)$/, ([, c]) => `bg-${c} text-${c}-100 w-full h-screen`],
     [/^btn-(.*)$/, ([, c]) => `bg-${c}-400 text-${c}-100 py-2 px-4 rounded-lg`],
   ],

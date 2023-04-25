@@ -10,7 +10,7 @@ const letterArray = computed(() => {
     h="full"
     w="full"
     flex="~ col-reverse md:row"
-    class="relative max-w-7xl justify-end overflow-hidden md:items-center"
+    class="max-w-7xl justify-end md:items-center"
   >
     <div
       w="full md:1/2"
@@ -61,6 +61,5 @@ const letterArray = computed(() => {
         class="aspect-square w-2/3"
       />
     </div>
-    <IconCode class="absolute w-70% rotate-180 opacity-70 filter-blur-6 -bottom-450px -left-550px" />
   </div>
 </template>

@@ -13,6 +13,7 @@ const string = ref('WELCOME')
     <div
       class="fixed left-10 flex items-center gap-2"
       top="5 md:10 lg:20"
+      z-1
     >
       <IconType />
       <div class="font-alfaslabone text-2xl tracking-4px">
@@ -23,6 +24,7 @@ const string = ref('WELCOME')
       class="fixed right-10 h-6 w-6 cursor-pointer"
       :class="darkLightIcon"
       top="5 md:10 lg:20"
+      z-1
       @click="toggleDark()"
       @touchstart="toggleDark()"
     />
