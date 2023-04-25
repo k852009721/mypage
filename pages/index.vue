@@ -21,7 +21,7 @@ function activeTabClass(index) {
     <div class="fixed right-10 top-50%">
       <div
         v-for="(item, index) in sections" :key="index"
-        class="h-14 flex items-center justify-center transition-all duration-150 ease-linear"
+        class="display-none h-14 items-center justify-center transition-all duration-150 ease-linear md:flex"
         p="r-4"
         :class="activeTabClass(index)"
       >
