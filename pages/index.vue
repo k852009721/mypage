@@ -1,12 +1,4 @@
 <script setup>
-import { useDark, useToggle } from '@vueuse/core'
-
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
-const darkLightIcon = computed(() => {
-  return isDark.value ? 'i-material-symbols-mode-night' : 'i-material-symbols:light-mode-outline'
-})
-
 const section1 = ref(null)
 const section2 = ref(null)
 const section3 = ref(null)
@@ -24,13 +16,8 @@ function activeTabClass(index) {
 </script>
 
 <template>
-  <div class="relative bg-base color-base">
-    <div
-      class="fixed right-10 top-20 h-6 w-6 cursor-pointer"
-      :class="darkLightIcon"
-      @click="toggleDark()"
-      @touchstart="toggleDark()"
-    />
+  <div class="font-sans bg-base color-base">
+    <OverlayButton />
     <div class="fixed right-10 top-50%">
       <div
         v-for="(item, index) in sections" :key="index"
