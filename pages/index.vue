@@ -5,7 +5,12 @@ const section3 = ref(null)
 const section4 = ref(null)
 const section5 = ref(null)
 const sections = ref([section1, section2, section3, section4, section5])
-const { activeSection } = useWheelSwitch(sections)
+const { activeSection, scrollToSection } = useWheelSwitch(sections)
+
+function onScrollClick(val) {
+  scrollToSection(val, true)
+}
+
 function activeTabClass(index) {
   if (index === activeSection.value)
     return 'border-r-gray-900 border-r-2 dark:border-r-purple-500'
@@ -32,7 +37,7 @@ function activeTabClass(index) {
       ref="section1"
       class="full-page"
     >
-      <SectionHome z-1 />
+      <SectionHome z-1 @on-scroll-click="onScrollClick" />
       <IconCode class="absolute w-250 rotate-180 opacity-70 filter-blur-6 -bottom-450px -left-550px" />
     </section>
     <section
@@ -48,18 +53,24 @@ function activeTabClass(index) {
       class="full-page"
     >
       <SectionSkill />
+      <IconCode class="absolute z-0 w-250 rotate-180 opacity-70 filter-blur-6 -bottom-450px -left-550px" />
+      <IconCode class="absolute z-0 w-250 opacity-70 filter-blur-6 -right-550px -top-450px" />
     </section>
     <section
       ref="section4"
       class="full-page"
     >
       <SectionProject />
+      <IconCode class="absolute z-0 w-250 rotate-180 opacity-70 filter-blur-6 -left-550px -top-450px" />
+      <IconCode class="absolute z-0 w-250 opacity-70 filter-blur-6 -bottom-450px -right-550px" />
     </section>
     <section
       ref="section5"
       class="full-page"
     >
       <SectionContact />
+      <IconCode class="absolute z-0 w-250 rotate-180 opacity-70 filter-blur-6 -bottom-450px -left-550px" />
+      <IconCode class="absolute z-0 w-250 opacity-70 filter-blur-6 -right-550px -top-450px" />
     </section>
   </div>
 </template>

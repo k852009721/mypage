@@ -99,5 +99,5 @@ export function useWheelSwitch(sections) {
     window.removeEventListener('touchmove', touchMove) // mobile devices
   })
 
-  return { activeSection }
+  return { activeSection, scrollToSection }
 }

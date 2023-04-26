@@ -1,8 +1,13 @@
 <script setup>
+const emit = defineEmits(['onScrollClick'])
 const title = ref('Front-End Software Developer')
 const letterArray = computed(() => {
   return title.value.split(' ')
 })
+
+function handleScrollClick() {
+  emit('onScrollClick', 1)
+}
 </script>
 
 <template>
@@ -47,7 +52,11 @@ const letterArray = computed(() => {
       <div m="b-8" text="lg">
         Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences.
       </div>
-      <div text="lg purple-700 dark:amber">
+      <div
+        text="lg purple-700 dark:amber"
+        class="cursor-pointer"
+        @click="handleScrollClick"
+      >
         <span>About me</span>
         <span i-charm-chevron-right ml-3 />
       </div>
