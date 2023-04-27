@@ -1,9 +1,6 @@
 <script setup>
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
-const darkLightIcon = computed(() => {
-  return isDark.value ? 'i-material-symbols-mode-night' : 'i-material-symbols:light-mode-outline'
-})
 
 const string = ref('WELCOME')
 </script>
@@ -11,8 +8,9 @@ const string = ref('WELCOME')
 <template>
   <div>
     <div
-      class="fixed left-10 flex items-center gap-2"
+      class="fixed flex items-center gap-2"
       top="5 md:10 lg:20"
+      left="2 md:10"
       z="2"
     >
       <IconType />
@@ -21,9 +19,9 @@ const string = ref('WELCOME')
       </div>
     </div>
     <div
-      class="fixed right-10 h-6 w-6 cursor-pointer"
-      :class="darkLightIcon"
+      class="i-material-symbols:light-mode-outline dark:i-material-symbols-mode-night fixed cursor-pointer text-3xl"
       top="5 md:10 lg:20"
+      right="2 md:10"
       z="2"
       @click="toggleDark()"
       @touchstart="toggleDark()"

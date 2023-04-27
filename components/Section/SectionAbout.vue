@@ -26,35 +26,35 @@ const letterArray = computed(() => {
           <span
             v-for="(letter, index) in letterArray[0]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
         <div class="flex gap-x-0.5">
           <span
             v-for="(letter, index) in letterArray[1]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
         <div class="flex gap-x-0.5">
           <span
             v-for="(letter, index) in letterArray[2]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
         <div class="flex gap-x-0.5">
           <span
             v-for="(letter, index) in letterArray[3]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
         <div class="flex gap-x-0.5">
           <span
             v-for="(letter, index) in letterArray[4]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
       </div>
@@ -62,7 +62,7 @@ const letterArray = computed(() => {
         Front End Developer / JavaScript Fan
       </div>
     </div>
-    <div w="full md:1/2" m="t-20 md:0">
+    <div w="full md:1/2">
       <div
         w="100% md:80%"
         text="lg"

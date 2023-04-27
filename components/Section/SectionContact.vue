@@ -58,13 +58,22 @@ const letterArray = computed(() => {
       <div
         w="100%"
         p="2"
-        flex="~ wrap"
+        flex="~ col"
+        items="center"
         gap="4"
         class="justify-center"
       >
-        <p>
+        <p text="lg">
           Feel free to reach out through any platforms bellow:
         </p>
+        <div flex="~" gap="x-4 md:8">
+          <a href="https://github.com/k852009721" target="_blank" rel="noreferrer noopenner">
+            <div i-fa6-brands-github text="5xl" bg="hover:purple dark:hover:amber" />
+          </a>
+          <a href="mailto:k120435@gmail.com" target="_blank" rel="noreferrer noopenner">
+            <div i-fa6-regular-envelope text="5xl" bg="hover:purple dark:hover:amber" />
+          </a>
+        </div>
       </div>
     </div>
   </div>

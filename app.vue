@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: 'Kevin HYN',
+})
+</script>
+
 <template>
   <NuxtPage />
 </template>

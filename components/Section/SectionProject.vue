@@ -54,14 +54,39 @@ const letterArray = computed(() => {
         </div>
       </div>
     </div>
-    <div w="full md:2/3" m="md:0">
+    <div w="full" m="md:0" p="md:r-20">
       <div
         w="100%"
         p="2"
-        flex="~ wrap"
+        flex="~ col"
         gap="4"
         class="justify-center"
-      />
+      >
+        <div flex="~ col md:row" items="center md:start">
+          <div flex="~ col" text="lg" m="b-6 md:b-0">
+            <div text="3xl" font="alfaslabone">
+              Realtime Chat App
+            </div>
+            <div m="y-4">
+              Real-time chat room with one-on-one chat and AI chat capabilities.
+            </div>
+            <div>
+              <span text="purple dark:gray-100">Built with:</span> VueJS, Pinia, TailwindCSS, NodeJS, ExpressJS, Socketio, OpenAI
+            </div>
+            <a
+              href="https://github.com/k852009721/socketio-vue3"
+              target="_blank"
+              rel="noreferrer noopenner"
+              text="lg purple-700 dark:amber"
+              class="group cursor-pointer"
+            >
+              <span>View the code</span>
+              <span i-charm-chevron-right m="l-2 group-hover:l-5" duration-400 />
+            </a>
+          </div>
+          <img src="~/assets/chat.png" w="60%" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </template>
