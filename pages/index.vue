@@ -52,7 +52,7 @@ function activeTabClass(index) {
       ref="section3"
       class="full-page"
     >
-      <SectionSkill />
+      <SectionSkill z-1 />
       <IconCode class="absolute z-0 w-250 rotate-180 opacity-70 filter-blur-6 -bottom-450px -left-550px" />
       <IconCode class="absolute z-0 w-250 opacity-70 filter-blur-6 -right-550px -top-450px" />
     </section>
@@ -60,7 +60,7 @@ function activeTabClass(index) {
       ref="section4"
       class="full-page"
     >
-      <SectionProject />
+      <SectionProject z-1 />
       <IconCode class="absolute z-0 w-250 rotate-180 opacity-70 filter-blur-6 -left-550px -top-450px" />
       <IconCode class="absolute z-0 w-250 opacity-70 filter-blur-6 -bottom-450px -right-550px" />
     </section>
@@ -68,7 +68,7 @@ function activeTabClass(index) {
       ref="section5"
       class="full-page"
     >
-      <SectionContact />
+      <SectionContact z-1 />
       <IconCode class="absolute z-0 w-250 rotate-180 opacity-70 filter-blur-6 -bottom-450px -left-550px" />
       <IconCode class="absolute z-0 w-250 opacity-70 filter-blur-6 -right-550px -top-450px" />
     </section>
