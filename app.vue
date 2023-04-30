@@ -1,6 +1,15 @@
 <script setup>
 useHead({
   title: 'Kevin HYN',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  charset: 'utf-8',
+  meta: [
+    { name: 'description', content: 'Kevin\'s personal website' },
+    { name: 'keywords', content: 'Nuxt3, personal website, unocss' },
+    { name: 'og:title', content: 'Kevin HYN' },
+    { name: 'og:description', content: 'Kevin\'s personal website' },
+    { property: 'og:image', content: 'https://i.imgur.com/3UGTIYx.png' },
+  ],
 })
 </script>
 
