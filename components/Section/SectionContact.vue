@@ -1,5 +1,5 @@
 <script setup>
-const title = ref('Let\'s make something great!')
+const title = ref('Let\'s make something fantastic!')
 const letterArray = computed(() => {
   return title.value.split(' ')
 })
