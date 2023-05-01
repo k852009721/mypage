@@ -16,6 +16,8 @@ const letterArray = computed(() => {
       w="full md:2/3"
       p="2"
       text-center
+      data-aos="flip-up"
+      data-aos-duration="1000"
     >
       <div
         font="alfaslabone"
@@ -64,13 +66,13 @@ const letterArray = computed(() => {
       >
         <div flex="~ col md:row" items="center md:start">
           <div flex="~ col" text="lg" m="b-6 md:b-0">
-            <div text="3xl" font="alfaslabone">
+            <div text="3xl" font="alfaslabone" data-aos="fade-right">
               Realtime Chat App
             </div>
-            <div m="y-4">
+            <div m="y-4" data-aos="fade-right" data-aos-delay="200">
               Real-time chat room with one-on-one chat and AI chat capabilities.
             </div>
-            <div>
+            <div data-aos="fade-right" data-aos-delay="400">
               <span text="purple dark:gray-100">Built with:</span> VueJS, Pinia, TailwindCSS, NodeJS, ExpressJS, Socketio, OpenAI
             </div>
             <a

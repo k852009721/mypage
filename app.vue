@@ -30,4 +30,12 @@ html.dark {
   background: #222;
   color: white;
 }
+/* hide scroll bar for firefox*/
+html {
+  overflow: -moz-hidden-unscrollable;
+}
+/* hide scroll bar for Chrome Edge*/
+::-webkit-scrollbar {
+  display: none;
+}
 </style>

@@ -21,6 +21,7 @@ const letterArray = computed(() => {
         h="fit"
         w="full"
         class="mb-5 flex flex-wrap gap-4"
+        data-aos="fade-right"
       >
         <div class="flex gap-x-0.5">
           <span
@@ -62,7 +63,7 @@ const letterArray = computed(() => {
         Front End Developer / JavaScript Fan
       </div>
     </div>
-    <div w="full md:1/2">
+    <div w="full md:1/2" data-aos="fade-left">
       <div
         w="100% md:80%"
         text="lg"

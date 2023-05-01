@@ -23,12 +23,13 @@ function activeTabClass(index) {
 <template>
   <div class="font-sans bg-base color-base">
     <OverlayButton />
-    <div class="fixed right-10 top-50% z-1">
+    <div class="fixed right-10 top-50% z-2">
       <div
         v-for="(item, index) in sections" :key="index"
-        class="display-none h-14 items-center justify-center transition-all duration-150 ease-linear md:flex"
+        class="display-none h-14 cursor-pointer items-center justify-center transition-all duration-150 ease-linear md:flex"
         p="r-4"
         :class="activeTabClass(index)"
+        @click="scrollToSection(index, true)"
       >
         {{ `0${index}` }}
       </div>

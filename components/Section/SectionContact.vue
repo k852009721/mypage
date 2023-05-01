@@ -16,6 +16,7 @@ const letterArray = computed(() => {
       w="full md:2/3"
       p="2"
       text-center
+      data-aos="flip-right"
     >
       <div
         font="alfaslabone"

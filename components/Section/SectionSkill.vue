@@ -27,6 +27,7 @@ const iconList = ref([
       w="full md:2/3"
       p="2"
       text-center
+      data-aos="zoom-in"
     >
       <div m="b-4" text="sm lg:lg purple dark:gray">
         Programming is just another name for a lost art whose name is thinking.
@@ -42,21 +43,21 @@ const iconList = ref([
           <span
             v-for="(letter, index) in letterArray[0]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
         <div class="flex gap-x-0.5">
           <span
             v-for="(letter, index) in letterArray[1]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
         <div class="flex gap-x-0.5">
           <span
             v-for="(letter, index) in letterArray[2]" :key="`letter${index}`"
             text="dark:hover:amber hover:purple 3xl lg:5xl"
-            class="hover:animate-rubberband transition-all"
+            class="transition-all hover:animate-rubberband"
           >{{ letter }}</span>
         </div>
       </div>

@@ -21,6 +21,7 @@
 		"nuxt": "^3.4.1"
 	},
 	"dependencies": {
-		"@antfu/eslint-config": "^0.38.5"
+		"@antfu/eslint-config": "^0.38.5",
+		"aos": "^3.0.0-beta.6"
 	}
 }

@@ -14,14 +14,10 @@ export function useWheelSwitch(sections) {
   }
 
   function handleMouseWheel(e) {
-    if (e.deltaY > 0 && !inMove.value)
-      // routerUP()
-      // console.log(e.deltaY)
+    if (e.deltaY > 0 && !inMove.value && activeSection.value < 4)
       moveUp()
 
-    if (e.deltaY < 0 && !inMove.value)
-      // routerDown()
-    // console.log(e.deltaY)
+    if (e.deltaY < 0 && !inMove.value && activeSection.value > 0)
       moveDown()
 
     e.preventDefault()
